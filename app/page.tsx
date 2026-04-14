@@ -140,35 +140,38 @@ try {
                   </label>
                 </div>
 <div className="grid gap-5 md:grid-cols-2">
-  <label className="block">
-    <span className="field-label">Egenkapital</span>
-    <input
-      type="text"
-      name="egenkapital"
-      placeholder="0kr, 10 000kr, osv."
-      className="input"
-    />
-  </label>
-</div>
-<div className="grid gap-5 md:grid-cols-2">
-  <label className="block">
-    <span className="field-label">Budsjett</span>
-    <input
-      type="text"
-      name="budsjett"
-      placeholder="F.eks. 250 000 kr"
-      className="input"
-    />
-  </label>
+  <div className="flex flex-col gap-5">
+    <label className="block">
+      <span className="field-label">Egenkapital</span>
+      <input
+        type="text"
+        name="egenkapital"
+        placeholder="0kr, 10 000kr, osv."
+        className="input"
+      />
+    </label>
 
-  <label className="block">
-    <span className="field-label">Innbytte</span>
-    <select name="innbytte" className="input">
-      <option value="">Velg</option>
-      <option value="Ja">Ja</option>
-      <option value="Nei">Nei</option>
-    </select>
-  </label>
+    <label className="block">
+      <span className="field-label">Innbytte</span>
+      <select name="innbytte" className="input">
+        <option value="">Velg</option>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+      </select>
+    </label>
+  </div>
+
+  <div>
+    <label className="block">
+      <span className="field-label">Budsjett</span>
+      <input
+        type="text"
+        name="budsjett"
+        placeholder="F.eks. 250 000 kr"
+        className="input"
+      />
+    </label>
+  </div>
 </div>
                 <label className="block">
                   <span className="field-label">Andre ønsker</span>
