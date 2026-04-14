@@ -12,15 +12,23 @@ Modell: ${data.modell ?? "-"}
 Egenkapital: ${data.egenkapital ?? "-"}
 `.trim();
 
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+
+    if (!token || !chatId) {
+      console.error("Mangler TELEGRAM_BOT_TOKEN eller TELEGRAM_CHAT_ID i .env.local");
+      return new Response("Manglende Telegram-konfigurasjon", { status: 500 });
+    }
+
     const telegramResponse = await fetch(
-      "https://api.telegram.org/bot8215412340:AAEg2bYOsADyCl3OSsfsgSuT5bQ0JUE-3xI/sendMessage",
+      `https://api.telegram.org/bot${token}/sendMessage`,
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          chat_id: 8409152495,
+          chat_id: chatId,
           text: message,
         }),
       }
