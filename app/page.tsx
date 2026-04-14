@@ -65,7 +65,7 @@ export default function TryggBruktbilLanding() {
             <div className="absolute -inset-6 bg-[#c9a865]/10 blur-3xl rounded-3xl" />
             <div className="relative rounded-[2rem] border border-white/10 bg-black/65 p-8 backdrop-blur shadow-[0_30px_80px_rgba(0,0,0,0.75)]">
               <div className="mb-6">
-                <div className="eyebrow text-[#c9a865]">Forespørsel</div>
+                <div className="eyebrow text-[#c9a865]">Skjema</div>
                 <h2 className="mt-2 text-xl font-medium premium-heading tracking-[-0.01em]">Oppgi preferanser</h2>
               </div>
 
