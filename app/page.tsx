@@ -26,11 +26,11 @@ export default function TryggBruktbilLanding() {
             <div className="text-2xl font-medium tracking-wide premium-heading">Autovalg</div>
           </div>
           <a
-            href="#skjema"
-            className="rounded-full border border-[#c9a865]/40 px-5 py-2 text-sm tracking-wide text-[#e7d2a2] hover:bg-[#c9a865] hover:text-black transition"
-          >
-            Forespørsel
-          </a>
+  href="/om-oss"
+  className="rounded-full border border-[#c9a865]/40 px-5 py-2 text-sm tracking-wide text-[#e7d2a2] hover:bg-[#c9a865] hover:text-black transition"
+>
+  Om oss
+</a>
         </div>
       </header>
 
@@ -49,9 +49,9 @@ export default function TryggBruktbilLanding() {
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
               {[
-                ["Diskré", "Ingen unødvendig kontakt."],
-                ["Presist", "Kun relevante kjøpere."],
-                ["Effektivt", "Garantert respons på timen."],
+                ["Diskré", "Ingen unødvendig kontakt. Vi går ikke rundt grøten."],
+                ["Trygt", "Kun relevante, norske og klare forhandlere."],
+                ["Effektivt", "Garantert respons på timen (7-23)."],
               ].map(([title, text]) => (
                 <div key={title} className="flex flex-col gap-2">
                   <div className="eyebrow text-[#c9a865] mb-2">{title}</div>
