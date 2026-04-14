@@ -106,17 +106,7 @@ export default function TryggBruktbilLanding() {
                     <input type="text" name="modell" placeholder="F.eks. A3, 320d, C-Klasse" className="input" />
                   </label>
                 </div>
-<div className="grid gap-5 md:grid-cols-2">
-  <label className="block">
-    <span className="field-label">Egenkapital</span>
-    <input
-      type="text"
-      name="egenkapital"
-      placeholder="0kr, 10 000kr, 50 000kr osv."
-      className="input"
-    />
-  </label>
-</div>
+
                 <div className="grid gap-5 md:grid-cols-2">
                   <label className="block">
                     <span className="field-label">Årsmodell</span>
@@ -135,7 +125,17 @@ export default function TryggBruktbilLanding() {
                     <input type="text" name="maks_kilometerstand" placeholder="300 000 km" className="input" />
                   </label>
                 </div>
-
+<div className="grid gap-5 md:grid-cols-2">
+  <label className="block">
+    <span className="field-label">Egenkapital</span>
+    <input
+      type="text"
+      name="egenkapital"
+      placeholder="0kr, 10 000kr, osv."
+      className="input"
+    />
+  </label>
+</div>
                 <label className="block">
                   <span className="field-label">Andre ønsker</span>
                   <textarea
