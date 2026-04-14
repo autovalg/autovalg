@@ -41,10 +41,36 @@ export default function OmOssPage() {
               Bygget på erfaring fra bruktbilmarkedet
             </h1>
 
-            <p className="mt-6 max-w-2xl text-[15px] text-white/55 leading-[1.8] tracking-[0.01em]">
-              Her kan du senere legge inn fortellingen din og teksten som skal
-              skape trygghet hos kunden.
-            </p>
+            <div className="mt-10 space-y-7 text-[15px] md:text-[16px] text-white/62 leading-[1.95] tracking-[0.01em]">
+
+  <p>
+    Autovalg startet som en konsekvens av at drømme-bilen ble et bomkjøp.
+    Den 4. juli 2018 kunne Forbrukerrådet dele at over 10% av tvistene de
+    mottok{" "}
+    <span className="text-[#d8b36a] font-medium">første halvår</span>{" "}
+    handlet om bruktbil. Dette var den største{" "}
+    <span className="text-[#d8b36a] font-medium">enkeltkategorien</span>{" "}
+    i landet vårt. Våre egne personlige erfaringer tilsier at dette problemet
+    ikke akkurat har forsvunnet med årene.
+  </p>
+
+  <p>
+    Hovedårsaken til at begge parter ender i en tvist er når bilen har{" "}
+    <span className="text-[#d8b36a] font-medium">ukjente</span>{" "}
+    mangler og problemer. God erfaring og et bredt nettverk gjør at vi står{" "}
+    <span className="text-[#d8b36a] font-medium">stabilt</span>{" "}
+    ettersom vi informerer om kjente feil og mangler ved kjøp og salg av bil.
+    Resultatet er at salg{" "}
+    <span className="text-[#d8b36a] font-medium">sjeldent</span>{" "}
+    ender i en tvist, og tilbud til deg som kunde kommer hurtig. Vi har en
+    responstid på under en time, og tilbud fra forhandlere kommer ofte like raskt.
+  </p>
+
+  <p className="text-white/78">
+    Målet er enkelt: En tryggere, mer effektiv og mer forutsigbar vei til riktig bil — for alle parter.
+  </p>
+
+</div>
           </div>
         </section>
       </main>
