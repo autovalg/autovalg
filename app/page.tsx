@@ -53,7 +53,7 @@ export default function TryggBruktbilLanding() {
                 ["Presist", "Kun relevante forslag."],
                 ["Effektivt", "Kortere vei til riktig bil."],
               ].map(([title, text]) => (
-                <div key={title} className="rounded-3xl border border-white/10 bg-white/[0.02] p-5">
+                <div key={title} className="flex flex-col gap-2">
                   <div className="eyebrow text-[#c9a865] mb-2">{title}</div>
                   <p className="text-[13px] text-white/50 leading-relaxed">{text}</p>
                 </div>
