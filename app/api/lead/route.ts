@@ -3,13 +3,23 @@ export async function POST(req: Request) {
     const data = await req.json();
 
     const message = `
-🚗 Nytt lead
+🔥 NY KUNDE – KLAR FOR KJØP
 
-Navn: ${data.navn ?? "-"}
-Telefon: ${data.telefonnummer ?? "-"}
-Bilmerke: ${data.bilmerke ?? "-"}
-Modell: ${data.modell ?? "-"}
-Egenkapital: ${data.egenkapital ?? "-"}
+💰 Budsjett: ${data.budsjett ?? "-"}
+🏦 Egenkapital: ${data.egenkapital ?? "-"}
+🔁 Innbytte: ${data.innbytte ?? "-"}
+
+🚘 Ønsket bil: ${data.bilmerke ?? "-"} ${data.modell ?? "-"}
+📅 Årsmodell: ${data.arsmodell ?? "-"}
+🛣️ Maks km: ${data.maks_kilometerstand ?? "-"}
+
+👤 Navn: ${data.navn ?? "-"}
+📞 Telefon: ${data.telefonnummer ?? "-"}
+
+📝 Andre ønsker:
+${data.andre_onsker ?? "-"}
+
+⚡ Anbefaling: Ta kontakt raskt – høy kjøpsintensjon
 `.trim();
 
     const token = process.env.TELEGRAM_BOT_TOKEN;
