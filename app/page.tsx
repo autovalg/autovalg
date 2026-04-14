@@ -72,7 +72,7 @@ export default function TryggBruktbilLanding() {
               <form
                 id="skjema"
                 className="space-y-5"
-                action="https://formsubmit.co/vmedia@sysdev.no"
+                action="https://formsubmit.co/post@autovalg.no"
                 method="POST"
               >
                 <input type="hidden" name="_subject" value="Ny forespørsel fra Autovalg" />
