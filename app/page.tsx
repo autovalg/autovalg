@@ -150,6 +150,26 @@ try {
     />
   </label>
 </div>
+<div className="grid gap-5 md:grid-cols-2">
+  <label className="block">
+    <span className="field-label">Budsjett</span>
+    <input
+      type="text"
+      name="budsjett"
+      placeholder="F.eks. 250 000 kr"
+      className="input"
+    />
+  </label>
+
+  <label className="block">
+    <span className="field-label">Innbytte</span>
+    <select name="innbytte" className="input">
+      <option value="">Velg</option>
+      <option value="Ja">Ja</option>
+      <option value="Nei">Nei</option>
+    </select>
+  </label>
+</div>
                 <label className="block">
                   <span className="field-label">Andre ønsker</span>
                   <textarea
