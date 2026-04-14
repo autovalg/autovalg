@@ -173,7 +173,7 @@ try {
 
         <section className="mx-auto max-w-7xl px-6 pb-20">
           <p className="text-sm text-white/30 max-w-md tracking-[0.01em] leading-relaxed">
-            For kjøpere som ønsker en mer strukturert tilnærming til bruktbilmarkedet.
+            For selgere som ønsker en mer strukturert tilnærming til bruktbilmarkedet.
           </p>
         </section>
       </main>
