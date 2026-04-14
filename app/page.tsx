@@ -178,7 +178,7 @@ try {
                   <textarea
                     rows={4}
                     name="andre_onsker"
-                    placeholder="F.eks: budsjett, drivstoff (bensin/diesel/el), automat, farge, S line / M-sport, quattro / xDrive, utstyrsnivå, adaptiv cruise, panorama"
+                    placeholder="F.eks: drivstoff (bensin/diesel/el), automat, farge, S line / M-sport, quattro / xDrive, utstyrsnivå, adaptiv cruise, panorama"
                     className="input"
                   />
                 </label>
