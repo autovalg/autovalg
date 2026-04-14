@@ -40,18 +40,18 @@ export default function TryggBruktbilLanding() {
             <div className="eyebrow text-[#c9a865]/70 mb-6">Autovalg - skiller klinten fra hveten</div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.02] premium-heading tracking-[-0.02em]">
-              Vi finner bilen <span className="text-[#d8b36a]">for deg</span>
+              Vi selger bilen <span className="text-[#d8b36a]">for deg</span>
             </h1>
 
             <p className="mt-6 max-w-lg text-[15px] text-white/55 leading-[1.8] tracking-[0.01em]">
-              Du beskriver den. Vi finner den.
+              Du beskriver den. Vi selger den.
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
               {[
                 ["Diskré", "Ingen unødvendig kontakt."],
-                ["Presist", "Kun relevante forslag."],
-                ["Effektivt", "Kortere vei til riktig bil."],
+                ["Presist", "Kun relevante kjøpere."],
+                ["Effektivt", "Kortere vei til salg."],
               ].map(([title, text]) => (
                 <div key={title} className="flex flex-col gap-2">
                   <div className="eyebrow text-[#c9a865] mb-2">{title}</div>
@@ -135,44 +135,20 @@ try {
                     </select>
                   </label>
                   <label className="block">
-                    <span className="field-label">Maks kilometerstand</span>
+                    <span className="field-label">Kilometerstand</span>
                     <input type="text" name="maks_kilometerstand" placeholder="300 000 km" className="input" />
                   </label>
                 </div>
-<div className="grid gap-5 md:grid-cols-2">
-  <div className="flex flex-col gap-5">
-    <label className="block">
-      <span className="field-label">Egenkapital</span>
-      <input
-        type="text"
-        name="egenkapital"
-        placeholder="0kr, 10 000kr, osv."
-        className="input"
-      />
-    </label>
+<label className="block">
+  <span className="field-label">Innbytte</span>
+  <select name="innbytte" className="input">
+    <option value="">Velg</option>
+    <option value="Ja">Ja</option>
+    <option value="Nei">Nei</option>
+  </select>
+</label>
 
-    <label className="block">
-      <span className="field-label">Innbytte</span>
-      <select name="innbytte" className="input">
-        <option value="">Velg</option>
-        <option value="Ja">Ja</option>
-        <option value="Nei">Nei</option>
-      </select>
-    </label>
-  </div>
-
-  <div>
-    <label className="block">
-      <span className="field-label">Budsjett</span>
-      <input
-        type="text"
-        name="budsjett"
-        placeholder="F.eks. 250 000 kr"
-        className="input"
-      />
-    </label>
-  </div>
-</div>
+  
                 <label className="block">
                   <span className="field-label">Andre ønsker</span>
                   <textarea
