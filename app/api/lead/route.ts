@@ -5,21 +5,20 @@ export async function POST(req: Request) {
     const message = `
 🔥 NY KUNDE – KLAR FOR KJØP
 
-💰 Budsjett: ${data.budsjett ?? "-"}
-🏦 Egenkapital: ${data.egenkapital ?? "-"}
 🔁 Innbytte: ${data.innbytte ?? "-"}
+🛣️ Kilometerstand: ${data.maks_kilometerstand ?? "-"}
 
-🚘 Ønsket bil: ${data.bilmerke ?? "-"} ${data.modell ?? "-"}
+🚘 Bil: ${data.bilmerke ?? "-"} ${data.modell ?? "-"}
 📅 Årsmodell: ${data.arsmodell ?? "-"}
-🛣️ Maks km: ${data.maks_kilometerstand ?? "-"}
 
 👤 Navn: ${data.navn ?? "-"}
 📞 Telefon: ${data.telefonnummer ?? "-"}
 
-📝 Andre ønsker:
+📝 Annet:
 ${data.andre_onsker ?? "-"}
 
-⚡ Anbefaling: Ta kontakt raskt – høy kjøpsintensjon
+⚡ ANBEFALING:
+Kontakt kunde raskt – høy sannsynlighet for salg
 `.trim();
 
     const token = process.env.TELEGRAM_BOT_TOKEN;
