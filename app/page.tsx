@@ -70,11 +70,25 @@ export default function TryggBruktbilLanding() {
               </div>
 
               <form
-                id="skjema"
-                className="space-y-5"
-                action="https://formsubmit.co/vmedia@sysdev.no"
-                method="POST"
-              >
+  id="skjema"
+  className="space-y-5"
+  action="https://formsubmit.co/vmedia@sysdev.no"
+  method="POST"
+onSubmit={(e) => {
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+try {
+  navigator.sendBeacon(
+    "/api/lead",
+    new Blob([JSON.stringify(data)], { type: "application/json" })
+  );
+} catch (error) {
+  console.error("Telegram-varsel feilet:", error);
+}
+  }}
+>
                 <input type="hidden" name="_subject" value="Ny forespørsel fra Autovalg" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
