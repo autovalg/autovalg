@@ -37,7 +37,7 @@ export default function TryggBruktbilLanding() {
       <main className="relative">
         <section className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[1.2fr_0.8fr] items-center">
           <div>
-            <div className="eyebrow text-[#c9a865]/70 mb-6">Selektiv tilgang</div>
+            <div className="eyebrow text-[#c9a865]/70 mb-6">Vi skiller klinten fra hveten</div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.02] premium-heading tracking-[-0.02em]">
               Vi finner bilen <span className="text-[#d8b36a]">for deg</span>
