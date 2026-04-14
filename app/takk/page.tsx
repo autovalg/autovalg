@@ -23,7 +23,8 @@ export default function TakkPage() {
         </h1>
 
         <p className="text-gray-400 mb-8 leading-relaxed">
-          Vi har mottatt forespørselen din og tar kontakt så snart som mulig.
+          Vi har mottatt forespørselen din og tar kontakt med deg per telefon/sms innen en time fra nå
+          (gjelder kun mellom kl. 07:00-23:00).
         </p>
 
         <a
