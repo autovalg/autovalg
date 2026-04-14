@@ -12,6 +12,7 @@ export default function TakkPage() {
     }}
   />
   <div className="absolute inset-0 bg-black/70" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(201,168,101,0.12),_transparent_45%)]" />
 </div>
 
       {/* INNHOLD */}
