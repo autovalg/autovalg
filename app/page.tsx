@@ -150,7 +150,7 @@ try {
 
   
                 <label className="block">
-                  <span className="field-label">Andre ønsker</span>
+                  <span className="field-label">Annet</span>
                   <textarea
                     rows={4}
                     name="andre_onsker"
