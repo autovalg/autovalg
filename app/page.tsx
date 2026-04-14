@@ -44,7 +44,7 @@ export default function TryggBruktbilLanding() {
             </h1>
 
             <p className="mt-6 max-w-lg text-[15px] text-white/55 leading-[1.8] tracking-[0.01em]">
-              Du beskriver bilen. Vi finner den.
+              Du beskriver den. Vi finner den.
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
