@@ -88,7 +88,7 @@ export default function TryggBruktbilLanding() {
                   </label>
                   <label className="block">
                     <span className="field-label">Telefonnummer</span>
-                    <input type="tel" name="telefonnummer" placeholder="99 99 99 99" className="input" required />
+                    <input type="tel" name="telefonnummer" placeholder="(+47) 99 99 99 99" className="input" required />
                   </label>
                 </div>
 
