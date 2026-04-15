@@ -51,7 +51,7 @@ export default function TryggBruktbilLanding() {
               {[
                 ["Diskré", "Ingen unødvendig kontakt. Vi går ikke rundt grøten."],
                 ["Trygt", "Kun relevante, norske og klare forhandlere."],
-                ["Effektivt", "Garantert respons på timen (7-23)."],
+                ["Effektivt", "Garantert respons på under timen (7-23)."],
               ].map(([title, text]) => (
                 <div key={title} className="flex flex-col gap-2">
                   <div className="eyebrow text-[#c9a865] mb-2">{title}</div>
